@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IFoodResponse } from './foodResponse';
 import { FoodApiService } from './services/food-api.service';
+import { Router } from '@angular/router'; //Import for second page
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   foodData:IFoodResponse | undefined;
   errorMessage:any;
 
-  constructor(private _foodService:FoodApiService){ }
+  constructor(private _foodService:FoodApiService, private router:Router){ }
 
   getFoodDetails(foodName:string): boolean {
     this._foodService.getFoodData(foodName).subscribe(
@@ -23,6 +24,13 @@ export class AppComponent {
     )
       return false;
     }
+
+//method for navigating to second page
+    goToPage(pageName:string):void{
+      this.router.navigate([`${pageName}`]);
   }
+
+  }
+  
   
 

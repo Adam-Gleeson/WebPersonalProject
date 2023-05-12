@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FoodApiService } from './services/food-api.service';
+import { PagetwoComponent } from './pagetwo/pagetwo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PagetwoComponent
   ],
   imports: [
     BrowserModule

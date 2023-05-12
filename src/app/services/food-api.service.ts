@@ -11,7 +11,7 @@ import { IFoodResponse } from '../foodResponse';
 })
 export class FoodApiService {
   private _siteURL="https://spoonacular.com/"
-  private _key="?apikey=6531601315864b09b604990733326360"
+  private _key="?apikey=6531601315864b09b604990733326360&t="
 
   constructor(private _http:HttpClient) { }
 

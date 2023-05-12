@@ -1,6 +1,6 @@
-<h1>Hello</h1>
 
 <div class="container">
+  <button (click)="goToPage('PageTwo')">Second Page</button>
   <h1>Recipe Finder</h1>
 
   <Form>
@@ -13,7 +13,7 @@
   <div class="row bg-light mt-4 p-4" *ngfor="foodData">
     <div class="col-sm-4">
       <div>
-        <!--  <h3>{{foodData?.error}}</h3>  -->
+         <h3>{{foodData?.error}}</h3>  
     </div>
     <div *ngIf="foodData?.Title"></div>
     <img src="{{foodData?.Poster}}" alt="Food Image">
@@ -24,3 +24,4 @@
     <h1>{{foodData?.Title}}</h1>
   </div>
 </div>
+
