@@ -1,27 +1,4 @@
 
-<div class="container">
-  <button (click)="goToPage('PageTwo')">Second Page</button>
-  <h1>Recipe Finder</h1>
-
-  <Form>
-    <div class="form-group">
-      <input type="text" name="food-name" class="form-control" #foodname placeholder="Enter a recipe here"> 
-    </div>
-    <button (click)="getFoodDetails(foodname.value)" type="submit" class="btn btn-primary mt-2">Get Recipt Details </button>
-  </Form>
-
-  <div class="row bg-light mt-4 p-4" *ngfor="foodData">
-    <div class="col-sm-4">
-      <div>
-         <h3>{{foodData?.error}}</h3>  
-    </div>
-    <div *ngIf="foodData?.Title"></div>
-    <img src="{{foodData?.Poster}}" alt="Food Image">
-  </div>
-</div>
-<div class="col-sm-8">
-  <div *ngIf="foodData?.Title">
-    <h1>{{foodData?.Title}}</h1>
-  </div>
-</div>
+<h1>Welcome to Receipe Finder</h1>
+<button (click)="goToPage('PageTwo')">Second Page</button>
 

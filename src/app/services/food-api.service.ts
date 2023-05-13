@@ -4,7 +4,7 @@ import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs';
-import { IFoodResponse } from '../foodResponse';
+import { IFoodResponse } from '../pagetwo/foodResponse';
 
 @Injectable({
   providedIn: 'root'
