@@ -11,7 +11,7 @@ import { Router } from '@angular/router'; //Import for second page
 })
 export class PagetwoComponent {
 
-  
+  /*
   foodData:IFoodResponse | undefined;
   errorMessage:any;
 
@@ -28,5 +28,5 @@ export class PagetwoComponent {
     }
 
 
-
+*/
 }

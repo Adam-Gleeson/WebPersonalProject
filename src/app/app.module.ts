@@ -4,14 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 //import { FoodApiService } from './services/food-api.service';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DatabasePageComponent } from './database-page/database-page.component';
+
+const routes:Routes=[
+  {path:'pagetwo', component:PagetwoComponent},
+  {path:'database-page', component:DatabasePageComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagetwoComponent
+    PagetwoComponent,
+    DatabasePageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   //providers: [FoodApiService],
   bootstrap: [AppComponent]

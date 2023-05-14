@@ -1,4 +1,43 @@
 
-<h1>Welcome to Receipe Finder</h1>
-<button (click)="goToPage('PageTwo')">Second Page</button>
+<!--  <app-searchtitle></app-searchtitle> -->
+<!--Header-->
+<div>
+  <h1 class="text-center">Recipe Finder</h1> 
+</div>
+<!--Nav-->
+<div class="text-center"> 
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pagetwo">Api Search</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="/database-page">Database</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+</div>
+</div>
+<div style="padding: 10px;">
+<!--Body-->
+<div>
+<div class="border border-success">
+  <h2 class="text-center">Why should you use Recipe Finder?</h2>
+  <p class="text-center">Recipe Finder is the fastest and easiest way to locate the recipes you want and need.</p>
+
+  <h2 class="text-center">Is Recipe Finder good?</h2>
+  <p class="text-center">We know people who love to cook, and they love using our website as they find it easy to use and 
+    it provides them exactly what they are looking for.
+  </p>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
 
