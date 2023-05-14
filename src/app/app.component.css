@@ -1,4 +1,30 @@
-.nav{
-    text-align: center;
+.header{
+    background-color: lightseagreen;
+    padding-bottom: 20px;
+}
+.body{
+background-color: lightskyblue;
+}
+.padding{
     padding: 5px;
+}
+
+.routing{
+    background-color: lightsalmon;
+}
+
+.paddingTop{
+    padding-top: 20px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

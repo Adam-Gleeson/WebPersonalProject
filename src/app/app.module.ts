@@ -6,6 +6,7 @@ import { FoodApiService } from './services/food-api.service';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DatabasePageComponent } from './database-page/database-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const routes:Routes=[
   {path:'pagetwo', component:PagetwoComponent}, //API Page
@@ -16,11 +17,12 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     PagetwoComponent,
-    DatabasePageComponent
+    DatabasePageComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [FoodApiService],
   bootstrap: [AppComponent]

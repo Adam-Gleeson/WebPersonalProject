@@ -1,32 +1,36 @@
 
 <!--  <app-searchtitle></app-searchtitle> -->
 <!--Header-->
-<div>
+<div class="padding">
+<div class="border border-success">
+<div class="header">
   <h1 class="text-center">Recipe Finder</h1> 
+</div>
+</div>
 </div>
 <!--Nav-->
 <div class="text-center"> 
   <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse">     
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/pagetwo">Api Search</a>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="/database-page">Database</a></li>
-    </ul>
+
+      <div class="text-center">
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/pagetwo">Find Recipe</a></li>
+      <li class="nav-item"><a class="nav-link" href="/database-page">Sign Up for more</a></li>
+      </div>
+    
+    </ul> 
   </div>
   </div>
   </nav>
 </div>
 </div>
-<div style="padding: 10px;">
+<div class="padding">
 <!--Body-->
-<div>
+<div class="body">
 <div class="border border-success">
   <h2 class="text-center">Why should you use Recipe Finder?</h2>
   <p class="text-center">Recipe Finder is the fastest and easiest way to locate the recipes you want and need.</p>
@@ -37,7 +41,15 @@
   </p>
 </div>
 </div>
-<router-outlet></router-outlet>
 
-
+<!--Routing websites Here-->
+<div class="font">
+<div class="paddingTop">
+<div class="border border-success">
+  <div class="routing">
+  <router-outlet></router-outlet>
+</div>
+</div>
+</div>
+</div>
 

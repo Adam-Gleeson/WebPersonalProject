@@ -1,1 +1,27 @@
-<h1>Enter your information below into the boxes</h1>
+<h1 class="text-center">Enter your information below into the boxes</h1>
+
+<div class='container mt-3 mb-3'>
+   <!-- <button (click)="show = !show">{{show ? 'Hide' : 'Add a User'}}</button> --> 
+  <!---  <div *ngIf="show"> --> 
+      <form>
+        <!--Name-->
+        <div class="input-group flex-nowrap" style="padding: 5px;">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input type="text" class="form-control" placeholder="Enter Name" aria-label="Name" aria-describedby="addon-wrapping" #Name>
+          </div>
+          <!--Gender-->
+          <div class="input-group flex-nowrap" style="padding: 5px;">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input type="text" class="form-control" placeholder="Enter Gender" aria-label="Gender" aria-describedby="addon-wrapping" #Gender>
+          </div>
+        <!--Email-->
+          <div class="input-group flex-nowrap" style="padding: 5px;">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input type="text" class="form-control" placeholder="Enter Email" aria-label="Email" aria-describedby="addon-wrapping" #Email>
+          </div>  
+    <!--  <button class="btn btn-primary" type="submit" (click)="addUser(Name.value,  Gender.value,Email.value)">Enter Details</button> --> 
+    <button class="btn btn-primary" type="submit">Enter Details</button> 
+      </form>
+      <div style="padding: 5px;">  
+    </div>
+  
